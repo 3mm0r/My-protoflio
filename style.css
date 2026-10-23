@@ -122,15 +122,24 @@ a {
   max-width: 1200px;
   margin: 0 auto;
 }
-
-/* تنسيق الصورة بداخل الإطار */
-.hero-image-container img {
+/* الحاوية الخاصة بالفريم */
+.hero-image-container, .hero-img-container {
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* الحل السحري: يجعل الصورة تغطي الإطار تماماً بدون ما ينضغط شكلها أو يتشوه */
-    object-position: center; /* لضمان تمركز المنتصف في الصورة */
+    max-width: 450px; /* تحكم في أقصى عرض للفريم */
+    height: 400px;    /* حدد ارتفاع ثابت ومناسب للفريم */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
+/* تنسيق الصورة بداخل الفريم */
+.hero-image-container img, .hero-img-container img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important; /* لملء الفريم بتناسق تام بدون مط */
+    display: block;
+}
 .hero-content {
   flex: 1;
   max-width: 650px;
