@@ -437,27 +437,4 @@ footer {
   .cta-buttons {
     justify-content: center;
   }
-  /* تنسيق الحاوية والإطار */
-.photo-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.photo-frame {
-    width: 320px;   /* يمكنك تعديل العرض حسب مقاس التصميم الذي تفضله */
-    height: 380px;  /* تحديد ارتفاع ثابت للإطار لضمان التناسق */
-    overflow: hidden;
-    border-radius: 16px; /* لإعطاء انحناءة جمالية للأطراف (اختياري) */
-}
-
-/* تنسيق الصورة الشخصية بداخل الإطار */
-.photo-frame .profile-img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important; /* لملء الفريم بالكامل بدون أي تشوه أو مط */
-    object-position: center !important; /* لتوسيط الوجه داخل الفريم */
-    display: block;
-}
-
 }
