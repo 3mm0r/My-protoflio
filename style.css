@@ -122,14 +122,6 @@ a {
   max-width: 1200px;
   margin: 0 auto;
 }
-/* مثال على إطار الصورة (Container) */
-.hero-image-container { /* استبدل هذا الاسم بالـ class الخاص بالإطار لديك */
-    width: 100%;
-    max-width: 400px; /* حدد العرض المناسب لتصميمك */
-    height: 400px; /* تحديد ارتفاع ثابث للإطار يضمن التناسق */
-    overflow: hidden; /* إخفاء أي أجزاء خارجة عن الإطار */
-    border-radius: 12px; /* لو حابب تخلي الأطراف دائرية */
-}
 
 /* تنسيق الصورة بداخل الإطار */
 .hero-image-container img {
